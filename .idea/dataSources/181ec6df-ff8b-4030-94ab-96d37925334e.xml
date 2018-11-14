@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@123.56.12.124">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="ApolloConfigDB">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="ApolloPortalDB"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="movie"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="9" parent="1" name="tiku"/>
+    <table id="10" parent="8" name="TBL_COM_DICDTL"/>
+    <table id="11" parent="8" name="tbl_param"/>
+    <table id="12" parent="8" name="tbl_sec_kill"/>
+    <column id="13" parent="10" name="ID">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>bigint(6)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="10" name="DATA_VALUE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="10" name="DATA_SUBVALUE">
+      <Position>3</Position>
+      <DataType>varchar(150)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="10" name="DATA_SUBNAME">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="10" name="PRE_DATA_VALUE">
+      <Position>5</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="11" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>bigint(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="11" name="param_type">
+      <Position>2</Position>
+      <Comment>参数类型</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="20" parent="11" name="param_code">
+      <Position>3</Position>
+      <Comment>参数code</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="21" parent="11" name="param_value">
+      <Position>4</Position>
+      <Comment>参数值</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="22" parent="11" name="param_desc">
+      <Position>5</Position>
+      <Comment>参数描述</Comment>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <column id="23" parent="12" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>bigint(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="12" name="count">
+      <Position>2</Position>
+      <Comment>数值</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>

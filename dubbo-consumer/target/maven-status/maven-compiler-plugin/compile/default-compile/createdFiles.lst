@@ -1,0 +1,5 @@
+com\fox\config\kafka\Listener.class
+com\fox\App.class
+com\fox\service\TestService.class
+com\fox\config\kafka\KafkaConsumerConfig.class
+com\fox\controller\TestController.class
