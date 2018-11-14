@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * Created by sh00859 on 2018/4/10.
  */
 public interface ProviderApiService {
-    String queryDubboTestName(String name);
+    String queryDubboTestName(String name) throws InterruptedException;
 
     Long increaseStock();
 

@@ -25,7 +25,7 @@ public class TestController {
 
     @RequestMapping(value = {"/test1"})
     @ResponseBody
-    public Map test(@RequestBody Map map) {
+    public Map test(@RequestBody Map map) throws InterruptedException {
         return testService.test(map);
     }
 

@@ -10,13 +10,13 @@ import javax.annotation.Resource;
  * Created by sh00859 on 2018/4/10.
  */
 //@Service(filter = "authorityFilter")
-@Service(group = "group1",protocol = "hessian",timeout = 100000)
+@Service(group = "group1",actives = 1, connections = 1)
 public class ProviderApiServiceImpl implements ProviderApiService {
     @Resource
     private ProviderService providerService;
 
     @Override
-    public String queryDubboTestName(String name) {
+    public String queryDubboTestName(String name) throws InterruptedException {
         return providerService.queryDubboTestName(name);
     }
 
