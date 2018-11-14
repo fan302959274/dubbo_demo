@@ -28,7 +28,7 @@ public class TestService {
     //    private ProviderApiService providerApiService2;
     //    @Reference(group = "group2")
     //    @Reference(group = "group1", timeout = 1000000, actives = 10, connections = 10)
-    @Reference(group = "group1")
+    @Reference(group = "group1",mock = "com.fox.service.mock.ProviderApiServiceMock",timeout = 1000)
     private ProviderApiService providerApiService;
 
     public Map test(Map map) throws InterruptedException {
