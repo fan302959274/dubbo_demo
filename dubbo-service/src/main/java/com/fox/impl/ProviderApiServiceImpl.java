@@ -17,7 +17,7 @@ public class ProviderApiServiceImpl implements ProviderApiService {
 
     @Override
     public String queryDubboTestName(String name) throws InterruptedException {
-        Thread.sleep(10000);
+//        Thread.sleep(10000);
         return providerService.queryDubboTestName(name);
     }
 

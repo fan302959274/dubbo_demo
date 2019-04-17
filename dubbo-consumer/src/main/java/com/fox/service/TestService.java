@@ -15,7 +15,8 @@ import java.util.Map;
 /**
  * dubbo的熔断限流降级
  * 熔断机制:消费者设置timeout(ms)会在指定指定时间内如果没响应的话就会熔断
- * 限流机制:
+ * 限流机制:客户端配置actives = 10, connections = 10限制访问的连接个数
+ * 降级机制:mock机制
  *
  * @author
  * @create 2018-04-10 17:20
@@ -27,8 +28,8 @@ public class TestService {
     //    @Reference(group = "group1",url = "dubbo://192.168.20.8:20880", cache = "true")
     //    private ProviderApiService providerApiService2;
     //    @Reference(group = "group2")
-    //    @Reference(group = "group1", timeout = 1000000, actives = 10, connections = 10)
-    @Reference(group = "group1",mock = "com.fox.service.mock.ProviderApiServiceMock",timeout = 1000)
+        @Reference(group = "group1", timeout = 1000000, actives = 10, connections = 10)
+//    @Reference(group = "group1",mock = "com.fox.service.mock.ProviderApiServiceMock",timeout = 1000)
     private ProviderApiService providerApiService;
 
     public Map test(Map map) throws InterruptedException {
