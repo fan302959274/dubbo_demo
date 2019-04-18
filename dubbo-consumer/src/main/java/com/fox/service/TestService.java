@@ -28,7 +28,8 @@ public class TestService {
     //    @Reference(group = "group1",url = "dubbo://192.168.20.8:20880", cache = "true")
     //    private ProviderApiService providerApiService2;
     //    @Reference(group = "group2")
-        @Reference(group = "group1", timeout = 1000000, actives = 10, connections = 10)
+//        @Reference(group = "group1", timeout = 1000000, actives = 1, connections = 1)
+        @Reference(group = "group1", timeout = 100000)
 //    @Reference(group = "group1",mock = "com.fox.service.mock.ProviderApiServiceMock",timeout = 1000)
     private ProviderApiService providerApiService;
 

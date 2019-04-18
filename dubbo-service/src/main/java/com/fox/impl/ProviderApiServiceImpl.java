@@ -10,7 +10,8 @@ import javax.annotation.Resource;
  * Created by sh00859 on 2018/4/10.
  */
 //@Service(filter = "authorityFilter")
-@Service(group = "group1",actives = 1, connections = 1)
+//@Service(group = "group1",actives = 1, connections = 1)
+@Service(group = "group1")
 public class ProviderApiServiceImpl implements ProviderApiService {
     @Resource
     private ProviderService providerService;
