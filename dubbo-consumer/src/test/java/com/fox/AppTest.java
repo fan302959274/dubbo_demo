@@ -1,7 +1,7 @@
 //package com.fox;
 //
 //import com.alibaba.dubbo.config.annotation.Reference;
-//import com.fox.api.ProviderApiService;
+//import com.fox.api.service.ProviderApiService;
 //import org.apache.log4j.net.SocketServer;
 //import org.junit.Test;
 //import org.junit.runner.RunWith;

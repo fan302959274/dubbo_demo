@@ -1,7 +1,8 @@
 package com.fox.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.fox.api.ProviderApiService;
+import com.fox.api.convert.Son;
+import com.fox.api.service.ProviderApiService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -52,5 +53,9 @@ public class TestService {
 
     public Integer randomBalance() {
         return providerApiService.randomBalance();
+    }
+
+    public Son querySonInfo(){
+        return providerApiService.querySonInfo();
     }
 }

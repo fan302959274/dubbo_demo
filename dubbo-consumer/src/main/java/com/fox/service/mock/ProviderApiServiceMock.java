@@ -1,6 +1,7 @@
 package com.fox.service.mock;
 
-import com.fox.api.ProviderApiService;
+import com.fox.api.convert.Son;
+import com.fox.api.service.ProviderApiService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -28,6 +29,11 @@ public class ProviderApiServiceMock implements ProviderApiService {
 
     @Override
     public Integer randomBalance() {
+        return null;
+    }
+
+    @Override
+    public Son querySonInfo() {
         return null;
     }
 }

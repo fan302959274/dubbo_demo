@@ -1,4 +1,6 @@
-package com.fox.api;
+package com.fox.api.service;
+
+import com.fox.api.convert.Son;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -18,6 +20,8 @@ public interface ProviderApiService {
     String testTimeOut();
 
     Integer randomBalance();
+
+    Son querySonInfo();
 
 
 }

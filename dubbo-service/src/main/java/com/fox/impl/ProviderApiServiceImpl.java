@@ -1,7 +1,8 @@
 package com.fox.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.fox.api.ProviderApiService;
+import com.fox.api.convert.Son;
+import com.fox.api.service.ProviderApiService;
 import com.fox.service.ProviderService;
 
 import javax.annotation.Resource;
@@ -35,5 +36,10 @@ public class ProviderApiServiceImpl implements ProviderApiService {
     @Override
     public Integer randomBalance() {
         return providerService.randomBalance();
+    }
+
+    @Override
+    public Son querySonInfo() {
+        return new Son("1","cff");
     }
 }

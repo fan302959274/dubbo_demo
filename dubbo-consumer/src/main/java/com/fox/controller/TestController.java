@@ -2,6 +2,7 @@ package com.fox.controller;/**
  * Created by sh00859 on 2018/4/10.
  */
 
+import com.fox.api.convert.Son;
 import com.fox.service.TestService;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,6 +46,12 @@ public class TestController {
     @ResponseBody
     public Integer test4() {
         return testService.randomBalance();
+    }
+
+    @RequestMapping(value = {"/test5"})
+    @ResponseBody
+    public Son test5() {
+        return testService.querySonInfo();
     }
 
 }
